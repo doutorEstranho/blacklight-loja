@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>login - Loja</title>
+ <link rel="stylesheet" href="/css/main.css">
+ <style>
+     #invisible{
+         display: none;
+     }
+ </style>
+</head>
+<body>
+<%- include("menu.html") -%>
+  <center>
+      <h1>Bote o codigo que enviei no seu pv!</h1>
+      <p>Verifique se a pessoa que mandou é a @Maryy#8530</p>
+      <div id="mary-login">
+          <form action="/logar/voc" method="post">
+              <input name=id id="invisible" value="<%- id -%>"
+              <div id="cool">
+codigo: <input name=id1 placeholder="codigo de 6 digitos que mandei no seu pv" required/><br/><br/>
+<input type="submit" value="Logar"/>
+              </div>
+          </form>
+      </div>
+  </center>
+</body>
+</html>

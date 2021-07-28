@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Loja</title>
+ <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <%- include("../menu.html")-%>
+  <center>
+      <h1>Resgate de gift</h1>
+      <p>Eae <%- user.username -%>! você  resgatou R$<%- String(Number(db.val().value).toFixed(2)).replace(".",",") -%> em gift <br/> agora você tem: R$<%- String(Number(saldoAtual).toFixed(2)).replace(".",",") -%> em sua carteira!
+      quer mais? então compre!
+      <li><a href="/comprar-gift">Comprar gifts</a></li>
+      </p>
+  </center>
+</body>
+</html>
